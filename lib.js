@@ -138,3 +138,7 @@ function renderBuff(buff) {
     document.getElementById('buff_' + buff.id).style.transition = 'ease ' + buff.trnstn + 's';
     document.getElementById('buff_' + buff.id).style.backgroundColor = buff.color;
 }
+
+function timeTike() {
+    console.log(new Date().getSeconds());
+}
