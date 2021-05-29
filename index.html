@@ -4,29 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        html, body {
-            height: 100%;
-            width: 100%;
-            margin: 0;
-            padding: 0;
-            position: relative;
-            overflow: hidden;
-        }
-        #map, #cube {
-            position: absolute;
-        }
-        .bot, .buff {
-            position: absolute;
-        }
-    </style>
 </head>
+<style>
+    html,body{
+        height:100%;
+        width:100%;
+        margin:0;
+        padding:0;
+    }
+    .window {
+        width:100%;
+        height:100%;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .kubiks{
+        width:244px;
+    }
+
+    .kubik{
+        width: 100px;
+        height: 100px;
+        background-color: black;
+        margin: 10px;
+        display: inline-block;
+        cursor: pointer;
+
+    }
+
+
+
+
+
+
+</style>
 <body>
-    <div id="map"></div>
-    <div id="cube"></div>
-    <script src="Game.js" defer></script>
-    <script src="lib.js" defer></script>
-    <script src="main.js" defer></script>
-    <!-- <div id="1" class="bot"></div> -->
+    <div class='window'>
+        <i></i>
+        <div id="kubiks" class='kubiks'></div>   
+        <i></i>
+</div>
+    <script src='script.js'></script>
 </body>
 </html>
